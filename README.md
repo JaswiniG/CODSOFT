@@ -24,7 +24,7 @@ CodSoft/
 │   ├── models/           # Saved model (spam_model.pkl)
 │   ├── notebooks/        # Jupyter Notebook files
 │   ├── reports/          # Any reports or visualizations
-│   └── src/              # Python scriptsHow to Run
+│   └── src/              # Python scripts
 
 How to run?
 1. Clone the repository
