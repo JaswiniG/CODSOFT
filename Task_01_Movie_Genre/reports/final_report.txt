@@ -1,0 +1,73 @@
+
+================================================================================
+MOVIE GENRE CLASSIFICATION - FINAL REPORT
+================================================================================
+
+Project: CODSOFT Machine Learning Internship - Task 1
+Date: October 30, 2025
+Notebook: movie_genre_classification.ipynb
+
+================================================================================
+DATASET INFORMATION
+================================================================================
+Total Training Samples: 54214
+Total Test Samples: 54200
+Number of Genres: 27
+Genres:  action ,  adult ,  adventure ,  animation ,  biography ,  comedy ,  crime ,  documentary ,  drama ,  family ,  fantasy ,  game-show ,  history ,  horror ,  music ,  musical ,  mystery ,  news ,  reality-tv ,  romance ,  sci-fi ,  short ,  sport ,  talk-show ,  thriller ,  war ,  western 
+
+Training Set: 43371 samples
+Validation Set: 10843 samples
+
+================================================================================
+FEATURE EXTRACTION
+================================================================================
+Method: TF-IDF (Term Frequency-Inverse Document Frequency)
+Max Features: 5000
+N-gram Range: (1, 2) - unigrams and bigrams
+Stop Words: English
+Feature Matrix Shape: (43371, 5000)
+
+================================================================================
+MODELS TRAINED
+================================================================================
+              Model  Train Acc  Val Acc  Precision   Recall  F1-Score
+        Naive Bayes   0.610615 0.550032   0.540230 0.550032  0.491525
+Logistic Regression   0.669572 0.576501   0.554849 0.576501  0.535183
+         Linear SVC   0.792027 0.565249   0.535681 0.565249  0.541551
+
+================================================================================
+BEST MODEL
+================================================================================
+Model Name: Logistic Regression
+Validation Accuracy: 0.5765 (57.65%)
+Test Accuracy: 0.5764 (57.64%)
+Test Precision: 0.5565
+Test Recall: 0.5764
+Test F1-Score: 0.5344
+
+================================================================================
+FILES SAVED
+================================================================================
+Models Directory:
+  - tfidf_vectorizer.pkl
+  - naive_bayes_model.pkl
+  - logistic_regression_model.pkl
+  - linear_svc_model.pkl
+
+Reports Directory:
+  - 01_genre_distribution.png
+  - 02_model_comparison.png
+  - 03_confusion_matrix.png
+
+================================================================================
+KEY INSIGHTS
+================================================================================
+- Successfully trained 3 classification algorithms
+- Logistic Regression performed best with 57.65% validation accuracy
+- Model handles 27 different genres (multi-class classification)
+- Dataset is imbalanced (drama and documentary dominate)
+- TF-IDF with bigrams effectively captured text patterns
+
+================================================================================
+PROJECT COMPLETED SUCCESSFULLY
+================================================================================
