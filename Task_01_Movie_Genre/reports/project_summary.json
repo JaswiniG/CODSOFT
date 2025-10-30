@@ -1,0 +1,26 @@
+{
+    "Project Information": {
+        "Task": "Movie Genre Classification",
+        "Internship": "CODSOFT Machine Learning",
+        "Date": "October 30, 2025",
+        "Status": "COMPLETED"
+    },
+    "Dataset Statistics": {
+        "Total Training Samples": 54214,
+        "Total Test Samples": 54200,
+        "Number of Genres": 27,
+        "Training Split": "43371 samples (80%)",
+        "Validation Split": "10843 samples (20%)"
+    },
+    "Best Model Performance": {
+        "Model": "Logistic Regression",
+        "Validation Accuracy": "0.5765 (57.65%)",
+        "Test Accuracy": "0.5764 (57.64%)",
+        "Test F1-Score": "0.5344"
+    },
+    "Files Generated": {
+        "Total Models Saved": 4,
+        "Total Visualizations": 3,
+        "Total Reports": 2
+    }
+}
