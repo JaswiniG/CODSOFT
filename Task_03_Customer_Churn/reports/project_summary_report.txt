@@ -1,0 +1,107 @@
+
+================================================================================
+CUSTOMER CHURN PREDICTION - PROJECT SUMMARY REPORT
+================================================================================
+
+1. DATASET INFORMATION
+================================================================================
+   - Total Records: 10000
+   - Total Features: 14
+   - Target Variable: Exited (0 = Retained, 1 = Churned)
+   - Churn Rate: 20.37%
+   - Retention Rate: 79.63%
+
+2. DATA PREPROCESSING
+================================================================================
+   - Missing Values: None
+   - Features Dropped: RowNumber, CustomerId, Surname
+   - Categorical Encoding: Geography, Gender (Label Encoding)
+   - Feature Scaling: StandardScaler applied
+   - Train-Test Split: 80-20 (Stratified)
+   - Training Samples: 8000
+   - Testing Samples: 2000
+
+3. MODELS TRAINED
+================================================================================
+   Logistic Regression
+   Random Forest Classifier (100 estimators)
+   Gradient Boosting Classifier (100 estimators)
+
+4. MODEL PERFORMANCE COMPARISON
+================================================================================
+
+   Logistic Regression:
+   --------------------
+   - Training Accuracy:  0.8083 (80.83%)
+   - Testing Accuracy:   0.8050 (80.50%)
+   - Precision:          0.5859
+   - Recall:             0.1425
+   - F1-Score:           0.2292
+   - ROC-AUC:            0.7710
+
+   Random Forest:
+   --------------
+   - Training Accuracy:  1.0000 (100.00%)
+   - Testing Accuracy:   0.8645 (86.45%)
+   - Precision:          0.7857
+   - Recall:             0.4595
+   - F1-Score:           0.5798
+   - ROC-AUC:            0.8469
+
+   Gradient Boosting:
+   ------------------
+   - Training Accuracy:  0.8704 (87.04%)
+   - Testing Accuracy:   0.8675 (86.75%)
+   - Precision:          0.7886
+   - Recall:             0.4767
+   - F1-Score:           0.5942
+   - ROC-AUC:            0.8673
+
+5. BEST MODEL
+================================================================================
+   Model: Gradient Boosting
+   Testing Accuracy: 0.8675 (86.75%)
+
+6. KEY INSIGHTS
+================================================================================
+   - All three models performed well with testing accuracy above 80%
+   - Gradient Boosting achieved the highest testing accuracy
+   - Feature importance analysis shows that Age, NumOfProducts, and 
+     IsActiveMember are among the most important predictors
+   - The models can help identify customers at risk of churning
+
+7. FILES GENERATED
+================================================================================
+   Models (saved in models/):
+   - logistic_regression_model.pkl
+   - random_forest_model.pkl
+   - gradient_boosting_model.pkl
+   - standard_scaler.pkl
+   - label_encoder_geography.pkl
+   - label_encoder_gender.pkl
+
+   Reports (saved in reports/):
+   - target_distribution.png
+   - numerical_features_distribution.png
+   - categorical_features_vs_churn.png
+   - correlation_matrix.png
+   - logistic_regression_results.png
+   - logistic_regression_feature_importance.png
+   - random_forest_results.png
+   - random_forest_feature_importance.png
+   - gradient_boosting_results.png
+   - gradient_boosting_feature_importance.png
+   - model_comparison_visualization.png
+   - model_comparison.csv
+   - model_predictions.csv
+   - project_summary_report.txt
+
+8. CONCLUSION
+================================================================================
+   The customer churn prediction models have been successfully developed
+   and evaluated. The Gradient Boosting model is recommended for
+   deployment based on its superior performance metrics.
+
+================================================================================
+Report Generated: 2025-10-30 14:23:08
+================================================================================
